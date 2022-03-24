@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.js">
+    <link rel="stylesheet" href="main.css">
+    <title>Colgen</title>
+</head>
+<body>
+    <header id="header">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <h1>HEXGEN</h1>
+            </div>
+            <div class="navbar-menu">
+                <a href="#hexgen">Hex Generator</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hexgen">
+        <div class="hexgen">
+            <div class="hexgen-text">
+                <h2>Hex Generator</h2>
+            </div>
+            <div class="hexgen-box">
+                <button class="box hex1" id="box1">#click</button>
+                <button class="box hex2" id="box2">#generate</button>
+                <button class="box hex3" id="box3">#button</button>
+            </div>
+            <div class="hexgen-button">
+                <button class="hexbut" onclick="generateHex();">Generate</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const generateHex = () => {
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            const randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+            const randomColor3 = Math.floor(Math.random()*16777215).toString(16);
+
+            document.getElementById("box1").style.backgroundColor = "#" + randomColor;
+            document.getElementById("box1").innerHTML = "#" + randomColor;
+            document.getElementById("box2").style.backgroundColor = "#" + randomColor2;
+            document.getElementById("box2").innerHTML = "#" + randomColor2;
+            document.getElementById("box3").style.backgroundColor = "#" + randomColor3;
+            document.getElementById("box3").innerHTML = "#" + randomColor3;
+        }
+
+        function copyhex1() {
+            
+        }
+    </script>
+</body>
+</html>

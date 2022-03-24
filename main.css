@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body {
+    background: #14213D;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo h1 {
+    letter-spacing: 10px;
+    color: #E5E5E5;
+    cursor: pointer;
+}
+
+.navbar-menu a{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #FCA311;
+}
+.hexgen {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    margin-left: 40px;
+    border-radius: 30px;
+    color: #14213D;
+    font-size: 20px;
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+}
+
+.box:first-child {
+    margin-left: 0;
+}
+
+
+.hexgen-text {
+    color: #FCA311;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.hexbut {
+    padding: 10px 30px;
+    color: #14213D;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.hextest {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
